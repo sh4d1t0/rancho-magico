@@ -34,10 +34,9 @@ class Bienvenida_usuarios extends CI_Controller {
             
             //Obtener datos de la tabla 'pedido'
              $consulta = $this->pedido_model->getData($data['idUsuario']); //llamamos a la función getData() del modelo creado anteriormente.
-             //var_dump($pedidos);
+             
             $data['pedidos'] = $consulta;
             $data['title']="Panel Usuario";
-            $data['pedidosact']="active";
             $this->load->view('template/header',$data);
             $this->load->view('template/menu_usuario',$data);
             $this->load->view('bienvenidausuario_view', $data);

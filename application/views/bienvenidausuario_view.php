@@ -36,6 +36,7 @@
               <thead>
                 <tr>
                   <th>No. Pedido</th>
+                  <th> Fecha </th>
                   <th>Total</th>
                   
                 </tr>
@@ -44,6 +45,7 @@
                 <?php /*var_dump($pedidos);*/ foreach ($pedidos as $p): ?>
                   <tr>
                    <td><?php echo $p->idPedido ?></td>
+                    <td><?php echo $p->fecha ?></td>
                     <td><?php echo $p->total ?></td>
                     </tr>
                     <?php endforeach;?>

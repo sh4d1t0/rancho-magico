@@ -18,10 +18,10 @@
 <li>Aviario</li>
 <li>Iguanario</li>
 </ul>
-<button class="btn btn-warning">Comprar</button>
+
 </div>
 
-                        <div class="col-md-3">
+<div class="col-md-3">
 <ul>
 <li>Laboratorio de Morfología</li>
 <li>Bosque Mágico</li>
@@ -30,8 +30,9 @@
 <li>Cancha de futbol</li>
 <li>Deslizadores</li>
 </ul>
-                        </div>
-                        <div class="col-md-3">
+</div>
+
+<div class="col-md-3">
 <ul>
 <li>Tobogán Acuático</li>
 <li>Toro Mecánico</li>
@@ -41,8 +42,15 @@
 <li>Estacionamiento</li>
                             </ul>
 
-                        </div>
-                    </div>
+</div>
+<?php   
+echo form_open('carrito/add');
+echo form_hidden('id', 1);
+echo form_hidden('nombre', "Admision General");
+echo form_hidden('precio', 145.00);
+echo form_submit('action', 'Agregar al carrito');
+echo form_close(); ?>
+</div>
                 </div>            
             </div> 
             <div class="item">
@@ -56,7 +64,13 @@
                                 <li>Taller de Pizza</li>
                                 <li>Taller de Panqué</li>
                             </ul>
-                            <button class="btn btn-warning">Comprar</button>
+                            <?php   
+echo form_open('carrito/add');
+echo form_hidden('id', 2);
+echo form_hidden('nombre', "Paquete Infantil");
+echo form_hidden('precio', 195.00);
+echo form_submit('action', 'Agregar al carrito');
+echo form_close(); ?>
                         </div>
                     </div>
                 </div>            
@@ -73,7 +87,13 @@
                                 <li>Cuatrimotos</li>
                                 <li>Eurobungee</li>
                             </ul>
-                            <button class="btn btn-warning">Comprar</button>
+                            <?php   
+echo form_open('carrito/add');
+echo form_hidden('id', 3);
+echo form_hidden('nombre', "Paquete Extremo");
+echo form_hidden('precio', 350.00);
+echo form_submit('action', 'Agregar al carrito');
+echo form_close(); ?>
                         </div>
                     </div>
                 </div>           
